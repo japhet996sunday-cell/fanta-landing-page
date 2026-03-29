@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fanta Landing Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:linear-gradient(90deg,#ff7b00,#ff3c00);
+color:white;
+}
+
+.navbar h2{
+font-weight:600;
+letter-spacing:1px;
+}
+
+.nav-links a{
+margin-left:25px;
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#ffe0b2;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 60px;
+background:linear-gradient(120deg,#ff8c00,#ff4500);
+color:white;
+flex-wrap:wrap;
+}
+
+/* TEXT ANIMATION */
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+animation:slideText 1.5s ease infinite;
+}
+
+@keyframes slideText{
+0%{
+opacity:0;
+transform:translateX(-50px);
+}
+100%{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+.hero p{
+font-size:16px;
+margin-bottom:15px;
+}
+
+.hero img{
+width:170px;
+animation:float 3s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+.btn{
+padding:12px 25px;
+background:white;
+color:#ff4500;
+border:none;
+border-radius:25px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ffe0b2;
+transform:scale(1.05);
+}
+
+/* ABOUT */
+
+.about{
+padding:70px;
+text-align:center;
+background:#fff3e0;
+}
+
+.about h2{
+margin-bottom:15px;
+color:#ff4500;
+}
+
+.about p{
+font-size:15px;
+color:#444;
+}
+
+/* FEATURES */
+
+.features{
+display:flex;
+justify-content:space-around;
+padding:70px;
+background:#fff;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.feature{
+width:30%;
+text-align:center;
+padding:25px;
+border-radius:10px;
+background:#fff8f2;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.feature:hover{
+transform:translateY(-8px);
+}
+
+.feature h3{
+color:#ff4500;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:70px;
+text-align:center;
+background:#fff3e0;
+}
+
+.contact h2{
+margin-bottom:10px;
+color:#ff4500;
+}
+
+/* FOOTER */
+
+.footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+font-size:14px;
+}
+
+
+/* ---------------- */
+/* RESPONSIVE MEDIA */
+/* ---------------- */
+
+/* Tablet */
+
+@media (max-width: 992px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+margin-top:30px;
+width:150px;
+}
+
+.features{
+flex-direction:column;
+align-items:center;
+}
+
+.feature{
+width:80%;
+}
+
+.navbar{
+padding:20px 30px;
+}
+
+.hero{
+padding:60px 30px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links a{
+margin:0 10px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.hero img{
+width:130px;
+}
+
+.feature{
+width:100%;
+}
+
+.about, .contact{
+padding:40px 20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+<h2>Fanta</h2>
+
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</div>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div>
+<h1>Refresh Your World</h1>
+<p>Enjoy the bold fruity taste of Fanta.</p>
+<button class="btn">Buy Now</button>
+</div>
+
+<img src="https://pngimg.com/uploads/fanta/fanta_PNG33.png">
+
+</div>
+
+<!-- ABOUT -->
+
+<div class="about">
+<h2>About Fanta</h2>
+<p>Fanta is a refreshing fruity soda loved by millions around the world.</p>
+</div>
+
+<!-- FEATURES -->
+
+<div class="features">
+
+<div class="feature">
+<h3>Great Taste</h3>
+<p>Enjoy the bold orange flavor.</p>
+</div>
+
+<div class="feature">
+<h3>Refreshing</h3>
+<p>Perfect drink for hot days.</p>
+</div>
+
+<div class="feature">
+<h3>Quality</h3>
+<p>Made with the best ingredients.</p>
+</div>
+
+</div>
+
+<!-- CONTACT -->
+
+<div class="contact">
+<h2>Contact Us</h2>
+<p>Email: info@fanta.com</p>
+<p>Phone: +234000000000</p>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+<p>© 2026 Fanta Landing Page</p>
+</div>
+
+</body>
+</html>
