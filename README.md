@@ -33,3 +33,9 @@ This project demonstrates responsive design, layout, and styling with internal C
 - Uses internal CSS (all styling inside `<style>` tag in HTML)
 - Images are hosted online (no local images needed)
 - Perfect for learning HTML structure and basic styling 
+
+
+## 🌐 Live Demo
+
+## 📂 Repository Link
+https://github.com/japhet996sunday-cell/fanta-landing-page
