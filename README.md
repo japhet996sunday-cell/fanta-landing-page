@@ -36,6 +36,9 @@ This project demonstrates responsive design, layout, and styling with internal C
 
 
 ## 🌐 Live Demo
+https://japhet996sunday-cell.github.io/fanta-landing-page/
+
+
 
 ## 📂 Repository Link
 https://github.com/japhet996sunday-cell/fanta-landing-page
